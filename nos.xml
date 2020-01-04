@@ -15,7 +15,7 @@
 
     <!-- general -->
     <project path="build/blueprint" name="android_build_blueprint" remote="nos" revision="10" />
-    <project path="build/make" name="android_build_make" remote="nos" revision="10" >
+    <project path="build/make" name="android_build_make" remote="TRB-NOS" revision="10" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -30,17 +30,19 @@
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
-    <project path="bionic" name="android_bionic" remote="nos" revision="10" />
+    <project path="art" name="android_art" remote="TRB-NOS" revision="10" />
+    <project path="bionic" name="android_bionic" remote="TRB-NOS" revision="10" />
     <project path="bootable/recovery" name="android_bootable_recovery" remote="nos" revision="10" />
+    <project path="libcore" name="libcore" remote="TRB-NOS" revision="10" groups="pdk" />
 
     <!-- qcom -->
     <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="nos" revision="10" />
 
     <!-- frameworks -->
-    <project path="frameworks/av" name="android_frameworks_av" remote="nos" revision="10" />
+    <project path="frameworks/av" name="android_frameworks_av" remote="TRB-NOS" revision="10" />
     <project path="frameworks/base" name="android_frameworks_base" remote="TRB-NOS" revision="10" />
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="nos" revision="10" />
-    <project path="frameworks/native" name="android_frameworks_native" remote="nos" revision="10" />
+    <project path="frameworks/native" name="android_frameworks_native" remote="TRB-NOS" revision="10" />
     <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="nos" revision="10" />
 
     <!-- hardware -->
@@ -78,7 +80,7 @@
 
     <!-- packages -->
     <project path="packages/apps/NitrogenSettings" name="android_packages_apps_NitrogenSettings" remote="TRB-NOS" revision="10" />
-    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nos" revision="10" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="TRB-NOS" revision="10" />
     <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="nos" revision="10" />
     <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="nos" revision="10" />
     <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nos" revision="10" />
