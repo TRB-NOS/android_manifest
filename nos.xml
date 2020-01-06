@@ -13,6 +13,10 @@
         fetch="https://github.com/TRB-NOS"
         sync-j="16" />
 
+    <remote name="los"
+        fetch="https://github.com/LineageOS"
+        sync-j="16" />
+
     <!-- general -->
     <project path="build/blueprint" name="android_build_blueprint" remote="nos" revision="10" />
     <project path="build/make" name="android_build_make" remote="TRB-NOS" revision="10" >
@@ -59,10 +63,15 @@
     <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="nos" revision="10" />
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="nos" revision="10" />
 
+    <!-- trb-nos -->
+	<project path="hardware/qcom-caf/msm8998/power" name="android_hardware_qcom_power" remote="TRB-NOS" revision="ten" />
+	
+    <!-- los -->
+    <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="los" revision="lineage-17.0-caf-msm8998"/>
+    <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="los" revision="lineage-17.0-caf-msm8998"/>
+    <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="los" revision="lineage-17.0-caf-msm8998"/>
+
     <!-- caf -->
-    <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" remote="nos" revision="10-caf-8996"/>
-    <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" remote="nos" revision="10-caf-8996"/>
-    <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="nos" revision="10-caf-8996"/>
     <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="nos" revision="10-caf" />
     <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="nos" revision="10-caf" />
     <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nos" revision="10" />
